@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-16T12:00:00Z",
-  "maintenance": { "active": false, "message_fr": "", "message_en": "" },
+  "updatedAt": "2026-07-16T21:35:00Z",
+  "maintenance": { "active": true, "message_fr": "Test du kill-switch : SOMBROC te dit bonjour depuis GitHub Pages. La mine rouvre dans un instant.", "message_en": "Kill-switch test: SOMBROC says hello from GitHub Pages. The mine reopens shortly." },
   "notice": { "active": false, "message_fr": "", "message_en": "" },
   "minVersion": { "android": "0.0.0" },
   "storeUrl": "https://play.google.com/store/apps/details?id=com.nikitaxv.sombroc"
