@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-16T12:00:00Z",
+  "maintenance": { "active": false, "message_fr": "", "message_en": "" },
+  "notice": { "active": false, "message_fr": "", "message_en": "" },
+  "minVersion": { "android": "0.0.0" },
+  "storeUrl": "https://play.google.com/store/apps/details?id=com.nikitaxv.sombroc"
+}
