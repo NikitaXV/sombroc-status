@@ -9,6 +9,7 @@
     padding:32px 20px 80px;line-height:1.65;color:#1c2430;background:#fafbfc}
   h1{font-size:1.7em;line-height:1.2} h2{font-size:1.15em;margin-top:2em}
   .meta{color:#5a6a7e;font-size:.92em} a{color:#0b62c4}
+  nav{font-size:.92em;margin:.5em 0 1.5em} nav a{margin-right:1em}
   table{border-collapse:collapse;width:100%;font-size:.92em}
   td,th{border:1px solid #d8dee6;padding:8px 10px;text-align:left;vertical-align:top}
   .en{margin-top:3em;border-top:2px solid #d8dee6;padding-top:1em}
@@ -16,51 +17,79 @@
 </head>
 <body>
 <h1>SOMBROC : Politique de confidentialité</h1>
-<p class="meta">Version 1 (pré-lancement) · 16 juillet 2026 · <a href="#english">English version below</a></p>
+<p class="meta">Version 2 (pré-lancement) · 22 juillet 2026 · <a href="#english">English version below</a></p>
+<nav><a href="confidentialite.html">Confidentialité</a><a href="conditions.html">Conditions d'utilisation</a><a href="suppression-compte.html">Suppression de compte</a></nav>
 
-<p>SOMBROC est un jeu mobile édité par <strong>Axel Bonamy (NikitaXV)</strong>, France.
+<p>SOMBROC est un jeu mobile édité par <strong>Axel Bonamy (NikitaXV)</strong>, France, responsable du traitement.
 Contact : <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a>.
-Le jeu est en cours de développement : cette politique décrit les traitements prévus et sera mise à jour avant la sortie publique, à cette même adresse.</p>
+Le jeu est gratuit avec des <strong>achats intégrés</strong> (gemmes) et des <strong>publicités récompensées</strong> facultatives.
+Cette politique décrit les traitements prévus et sera mise à jour avant la sortie publique, à cette même adresse.</p>
 
 <h2>1. Données traitées et finalités</h2>
 <table>
 <tr><th>Données</th><th>Finalité</th><th>Base légale</th></tr>
-<tr><td>Identifiant de joueur Google Play Games (ou identifiant invité)</td><td>Compte, sauvegarde de la progression, fonctionnement en ligne</td><td>Exécution du contrat</td></tr>
-<tr><td>Données de jeu (progression, inventaire, actions)</td><td>Fonctionnement du jeu en ligne</td><td>Exécution du contrat</td></tr>
+<tr><td>Identifiant de joueur Google Play Games (ou identifiant invité)</td><td>Compte, sauvegarde de la progression, jeu en ligne</td><td>Exécution du contrat</td></tr>
+<tr><td>Données de jeu (progression, inventaire, porte-monnaie, actions)</td><td>Fonctionnement du jeu en ligne</td><td>Exécution du contrat</td></tr>
+<tr><td>Jeton d'achat (Google Play Billing)</td><td>Validation serveur des achats intégrés, lutte contre la fraude au remboursement</td><td>Exécution du contrat / intérêt légitime</td></tr>
+<tr><td>Signaux techniques anti-triche (cohérence des actions, intégrité de l'appareil via Google Play Integrity)</td><td>Prévention de la fraude, équité du jeu</td><td>Intérêt légitime</td></tr>
 <tr><td>Mesures d'audience et d'usage (événements de jeu)</td><td>Amélioration du jeu</td><td>Consentement (refusable et retirable dans les réglages)</td></tr>
 <tr><td>Rapports d'erreurs et de plantages</td><td>Correction des bugs</td><td>Intérêt légitime</td></tr>
-<tr><td>Signaux techniques anti-triche (cohérence des actions, intégrité de l'appareil via Google Play Integrity)</td><td>Prévention de la fraude, équité du jeu</td><td>Intérêt légitime</td></tr>
-<tr><td>Identifiants publicitaires (si consentement)</td><td>Publicités récompensées (AdMob)</td><td>Consentement via la plateforme de gestion du consentement (CMP Google)</td></tr>
-<tr><td>Jeton de notification</td><td>Notifications push (désactivables par catégorie)</td><td>Consentement</td></tr>
+<tr><td>Identifiant publicitaire et signaux AdMob (si consentement)</td><td>Publicités récompensées et mesure de leur diffusion (SSV)</td><td>Consentement via la CMP certifiée Google (UMP)</td></tr>
+<tr><td>Jeton de notification (FCM)</td><td>Notifications push (désactivables par catégorie)</td><td>Consentement</td></tr>
 </table>
 
 <h2>2. Destinataires et sous-traitants</h2>
-<p>Hetzner (hébergement serveur, Allemagne) · Google (Play, Play Games, Play Integrity, AdMob, Firebase Cloud Messaging) · PostHog (mesure d'audience, hébergement Union européenne) · Sentry (rapports d'erreurs). Aucune vente de données. Pas de transfert hors UE au-delà de ce que ces services documentent dans leurs clauses contractuelles types.</p>
+<p>Nous ne vendons aucune donnée. Nos sous-traitants et leurs rôles :</p>
+<ul>
+<li><strong>Hetzner Online GmbH</strong> (Allemagne) — hébergement du serveur de jeu.</li>
+<li><strong>Google Ireland / Google LLC</strong> via les <strong>services Google Play</strong> : Google Play Games Services (authentification, sauvegarde), Google Play Integrity (anti-triche), Google Play Billing (achats), <strong>Google AdMob</strong> (publicités récompensées) et Firebase Cloud Messaging (notifications).</li>
+<li><strong>PostHog</strong> (mesure d'audience, hébergement Union européenne) — uniquement si vous consentez.</li>
+<li><strong>Sentry</strong> (rapports de plantage).</li>
+</ul>
+<p>Ces prestataires peuvent traiter des données hors UE ; le cas échéant, les transferts sont encadrés par les clauses contractuelles types de la Commission européenne documentées dans leurs politiques respectives.</p>
 
-<h2>3. Durées de conservation</h2>
-<p>Compte et progression : tant que le compte existe. Télémétrie anti-triche : 90 jours (agrégats). Mesure d'audience : selon les durées PostHog configurées. Journaux de fraude en cas d'infraction constatée : durée nécessaire au traitement du litige.</p>
+<h2>3. Publicités et consentement UE</h2>
+<p>Les publicités sont <strong>récompensées et facultatives</strong> : aucune publicité interstitielle imposée. Dans l'Espace économique européen et au Royaume-Uni, une <strong>plateforme de gestion du consentement (CMP) certifiée Google, via le SDK UMP</strong>, recueille votre choix avant toute personnalisation publicitaire. Un refus reste pleinement jouable : des alternatives en gemmes sont proposées. Vous pouvez rouvrir ce choix à tout moment dans les réglages du jeu.</p>
 
-<h2>4. Vos droits et la suppression de compte</h2>
-<p>Droits d'accès, de rectification, d'effacement, d'opposition et de portabilité : écrivez à
+<h2>4. Durées de conservation</h2>
+<p>Compte et progression : tant que le compte existe. Télémétrie anti-triche : 90 jours (agrégats). Registres d'idempotence des opérations : purgés au-delà de 90 jours. Mesure d'audience : selon les durées PostHog configurées. Journaux de fraude en cas d'infraction constatée : durée nécessaire au traitement du litige.</p>
+
+<h2>5. Vos droits et la suppression de compte</h2>
+<p>Droits d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité, et droit de retirer votre consentement : écrivez à
 <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a> (objet : « SOMBROC : données »).
-La suppression de compte sera disponible directement dans le jeu (Paramètres, Compte, Supprimer mon compte)
-et via cette page dès la sortie ; d'ici là, toute demande par email est traitée sous 7 jours.
-Réclamation possible auprès de la CNIL (cnil.fr).</p>
+La suppression de compte est décrite sur la page dédiée : <a href="suppression-compte.html">Suppression de compte</a>
+(dans le jeu : Paramètres › Compte › Supprimer mon compte, et par cette page web).
+Réclamation possible auprès de la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
 
-<h2>5. Âge</h2>
-<p>Le jeu est destiné aux joueurs de 13 ans et plus (15 ans pour le consentement autonome en France).</p>
+<h2>6. Âge</h2>
+<p>Le jeu est destiné aux joueurs de 13 ans et plus (15 ans pour le consentement autonome en France). Le paramètre « traiter comme un public soumis à l'âge du consentement » d'AdMob est configuré en cohérence.</p>
 
 <div class="en" id="english">
 <h1>SOMBROC : Privacy Policy (English)</h1>
-<p class="meta">Version 1 (pre-launch) · July 16, 2026</p>
-<p>SOMBROC is a mobile game published by <strong>Axel Bonamy (NikitaXV)</strong>, France.
-Contact: <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a>.
-The game is under development; this policy describes the planned processing and will be updated at this same URL before public release.</p>
-<p><strong>Data we process:</strong> Google Play Games player ID (or guest ID) and gameplay data to run the online game (contract) ; usage analytics only with your consent (refusable and withdrawable in the settings) ; crash reports and anti-cheat signals, including Google Play Integrity, under legitimate interest ; advertising identifiers only with consent through Google's certified consent platform (rewarded ads via AdMob) ; push token with consent.</p>
-<p><strong>Processors:</strong> Hetzner (server hosting, Germany), Google (Play, Play Games, Play Integrity, AdMob, Firebase Cloud Messaging), PostHog (EU hosting), Sentry. We never sell data.</p>
-<p><strong>Retention:</strong> account data while the account exists; anti-cheat telemetry 90 days; fraud logs as long as needed for the case.</p>
-<p><strong>Your rights and account deletion:</strong> email <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a> (subject "SOMBROC: data"). In-game account deletion will be available at launch (Settings, Account, Delete my account) and from this page; until then email requests are handled within 7 days.</p>
-<p><strong>Age:</strong> 13+ (15+ for autonomous consent in France).</p>
+<p class="meta">Version 2 (pre-launch) · July 22, 2026</p>
+<p>SOMBROC is a mobile game published by <strong>Axel Bonamy (NikitaXV)</strong>, France, the data controller.
+Contact: <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a>. The game is free with
+<strong>in-app purchases</strong> (gems) and optional <strong>rewarded ads</strong>. This policy describes the planned
+processing and will be updated at this same URL before public release.</p>
+<p><strong>Data we process:</strong> Google Play Games player ID (or guest ID) and gameplay data (progression, inventory,
+wallet, actions) to run the online game (contract); Google Play Billing purchase tokens for server-side purchase
+validation and refund-fraud prevention (contract / legitimate interest); anti-cheat signals, including Google Play
+Integrity, under legitimate interest; usage analytics only with your consent (refusable and withdrawable in settings);
+crash reports under legitimate interest; advertising ID and AdMob signals only with consent through Google's certified
+consent platform (UMP), for rewarded ads and ad-delivery measurement (SSV); FCM push token with consent.</p>
+<p><strong>Processors:</strong> Hetzner (server hosting, Germany); Google via Google Play Services — Play Games,
+Play Integrity, Play Billing, <strong>AdMob</strong>, Firebase Cloud Messaging; PostHog (EU hosting, consent only);
+Sentry (crash reports). We never sell data. Non-EU transfers, where they occur, rely on the EU Standard Contractual Clauses.</p>
+<p><strong>Ads &amp; EU consent:</strong> ads are rewarded and optional — no forced interstitials. In the EEA/UK a
+Google-certified consent platform (UMP SDK) collects your choice before any ad personalization; declining stays fully
+playable (gem alternatives are offered) and can be reopened in settings.</p>
+<p><strong>Retention:</strong> account data while the account exists; anti-cheat telemetry 90 days; operation
+idempotency records purged after 90 days; fraud logs as long as needed for the case.</p>
+<p><strong>Your rights &amp; account deletion:</strong> access, rectification, erasure, objection, restriction,
+portability, and consent withdrawal — email <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a>
+(subject "SOMBROC: data"). See the dedicated <a href="suppression-compte.html">Account deletion</a> page (in-game:
+Settings › Account › Delete my account, and via that web page). You may lodge a complaint with the French CNIL.</p>
+<p><strong>Age:</strong> 13+ (15+ for autonomous consent in France); AdMob's under-age-of-consent flag is set accordingly.</p>
 </div>
 </body>
 </html>
