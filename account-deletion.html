@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOMBROC: Account Deletion</title>
+<style>
+  :root{color-scheme:light}
+  body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;max-width:780px;margin:0 auto;
+    padding:32px 20px 80px;line-height:1.65;color:#1c2430;background:#fafbfc}
+  h1{font-size:1.7em;line-height:1.25} h2{font-size:1.12em;margin-top:2.2em}
+  .meta{color:#5a6a7e;font-size:.92em} a{color:#0b62c4}
+  nav{font-size:.92em;margin:.6em 0 1.8em;padding-bottom:.8em;border-bottom:1px solid #e2e7ee}
+  nav a{margin-right:1em;display:inline-block}
+  ol{padding-left:1.3em} ul{padding-left:1.2em} li{margin:.35em 0}
+  table{border-collapse:collapse;width:100%;font-size:.92em;margin:.6em 0}
+  td,th{border:1px solid #d8dee6;padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#f0f3f7}
+  .action{border-left:4px solid #0b62c4;background:#eef4fc;padding:.9em 1em;margin:1.4em 0}
+  .action h2{margin-top:0}
+  [data-etat="prevu"]{border-left:4px solid #c8a33a;background:#fdf8ea;padding:.9em 1em;margin:1.4em 0}
+  [data-etat="prevu"] h2{margin-top:0}
+  .drapeau{display:inline-block;font-weight:700;font-size:.78em;letter-spacing:.06em;
+    text-transform:uppercase;color:#7a5c00;background:#f6e7b8;padding:2px 8px;border-radius:3px}
+  footer{margin-top:3em;padding-top:1em;border-top:1px solid #e2e7ee;font-size:.9em;color:#5a6a7e}
+</style>
+</head>
+<body>
+<h1>SOMBROC: Account Deletion</h1>
+<p class="meta">Version 2 (pre-launch) · 3 August 2026 · <a href="suppression-compte.html">Version française</a></p>
+<nav>
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms of Use</a>
+  <a href="account-deletion.html">Account Deletion</a>
+  <a href="legal-notice.html">Legal Notice</a>
+</nav>
+
+<p>You may ask for your SOMBROC account and its associated data to be deleted at any time. The request is
+<strong>free</strong> and does <strong>not require the game to be installed</strong>.</p>
+
+<div class="action">
+<h2>1. Request deletion (on the web, without the game)</h2>
+<ol>
+<li>Send an e-mail to
+<a href="mailto:bonamyaxelucas@hotmail.fr?subject=SOMBROC%3A%20account%20deletion&amp;body=Account%20identifier%3A%20">bonamyaxelucas@hotmail.fr</a>
+with the subject <strong>"SOMBROC: account deletion"</strong>.</li>
+<li>Include your <strong>account identifier</strong> in the message. It is the only piece of information that lets
+us find your save: the game knows neither your name nor your e-mail address.
+<ul>
+<li>If you still have the game installed: Settings › <em>Account &amp; support</em> › <em>Account identifier</em> ›
+<strong>Copy</strong>, then paste it into the e-mail.</li>
+<li>If you have uninstalled the game and no longer have that identifier, write to us anyway: give the nickname shown
+in the leaderboards and the approximate date of your last session, and we will look for the account with you.
+Without something that ties you to an account we cannot proceed, as we would be unable to verify that the account is
+yours.</li>
+</ul></li>
+<li>We record the request on the server and reply by e-mail to confirm it, then again once the deletion has been
+carried out.</li>
+</ol>
+</div>
+
+<div data-etat="prevu">
+<h2>2. From inside the game <span class="drapeau">not available yet</span></h2>
+<p>A deletion button inside the game settings is planned; it is <strong>not available in the version published as
+of the date of this page</strong> (3 August 2026). Until it is, the web route above is the official channel and
+produces exactly the same effect. This page will be updated as soon as the button ships.</p>
+</div>
+
+<h2>3. What happens, and when</h2>
+<table>
+<tr><th>Step</th><th>Timing</th><th>Effect</th></tr>
+<tr><td>Request recorded</td><td>Immediate</td>
+<td>All your sessions are disconnected and your account is removed from the public leaderboards (depth, kills, duels).</td></tr>
+<tr><td>Safety period</td><td>7 days</td>
+<td>Your data still exists, but the account is offline. This delay protects against requests made by mistake, or by
+someone who had access to your phone. You can cancel during this period (see section 5).</td></tr>
+<tr><td>Final purge</td><td>At D+7</td>
+<td>The data listed below is erased and the account is deleted. The operation is <strong>irreversible</strong>.</td></tr>
+</table>
+
+<h2>4. What is erased</h2>
+<ul>
+<li>The account itself and its sign-in identifiers.</li>
+<li>Your in-game currencies (gold, gems), your bag, your chest, your smelting batches, your equipment, your relics.</li>
+<li>Your progress: maximum depth reached, experience, daily reward cycle, entitlements bought in the shop,
+rewarded-placement counters.</li>
+<li>The ghosts you left in the mine and your play-time clocks.</li>
+<li>Your entries in the three public leaderboards.</li>
+<li>Your duel rating and the duel invitations you received.</li>
+<li>Your notification token and your notification preferences.</li>
+<li>Your anti-abuse counters and your technical operations record.</li>
+</ul>
+<p><strong>What remains after the purge</strong>: a single <strong>anonymous</strong> audit line — a one-way
+cryptographic fingerprint and a date — proving that the deletion did take place. Since the original identifier is
+destroyed, that fingerprint cannot be used to re-identify you. Technical database backups may still contain your
+data until they rotate out (a few weeks at most); they are never consulted outside a restore after an incident.
+Finally, if fraud was established on the account, the corresponding evidence is kept for as long as the case requires.</p>
+
+<h2>5. Cancelling a request</h2>
+<p>As long as the 7 days have not elapsed, write to the same address with the subject
+<strong>"SOMBROC: cancel account deletion"</strong> and your account identifier: the request is cancelled and you
+get your save back untouched. After that deadline, nothing can be recovered.</p>
+
+<h2>6. Other rights</h2>
+<p>You can also ask for a copy of your data, or for it to be corrected, without deleting your account: see the
+<a href="privacy.html">privacy policy</a>.</p>
+
+<footer>
+SOMBROC — <a href="legal-notice.html">Legal notice</a> ·
+<a href="privacy.html">Privacy policy</a> ·
+<a href="terms.html">Terms of Use</a> ·
+Contact: <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a>
+</footer>
+</body>
+</html>
