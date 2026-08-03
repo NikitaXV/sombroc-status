@@ -5,62 +5,117 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SOMBROC : Suppression de compte</title>
 <style>
-  body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;max-width:760px;margin:0 auto;
+  :root{color-scheme:light}
+  body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;max-width:780px;margin:0 auto;
     padding:32px 20px 80px;line-height:1.65;color:#1c2430;background:#fafbfc}
-  h1{font-size:1.7em;line-height:1.2} h2{font-size:1.15em;margin-top:2em}
+  h1{font-size:1.7em;line-height:1.25} h2{font-size:1.12em;margin-top:2.2em}
   .meta{color:#5a6a7e;font-size:.92em} a{color:#0b62c4}
-  nav{font-size:.92em;margin:.5em 0 1.5em} nav a{margin-right:1em}
-  ol{padding-left:1.3em} .en{margin-top:3em;border-top:2px solid #d8dee6;padding-top:1em}
+  nav{font-size:.92em;margin:.6em 0 1.8em;padding-bottom:.8em;border-bottom:1px solid #e2e7ee}
+  nav a{margin-right:1em;display:inline-block}
+  ol{padding-left:1.3em} ul{padding-left:1.2em} li{margin:.35em 0}
+  table{border-collapse:collapse;width:100%;font-size:.92em;margin:.6em 0}
+  td,th{border:1px solid #d8dee6;padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#f0f3f7}
+  .action{border-left:4px solid #0b62c4;background:#eef4fc;padding:.9em 1em;margin:1.4em 0}
+  .action h2{margin-top:0}
+  [data-etat="prevu"]{border-left:4px solid #c8a33a;background:#fdf8ea;padding:.9em 1em;margin:1.4em 0}
+  [data-etat="prevu"] h2{margin-top:0}
+  .drapeau{display:inline-block;font-weight:700;font-size:.78em;letter-spacing:.06em;
+    text-transform:uppercase;color:#7a5c00;background:#f6e7b8;padding:2px 8px;border-radius:3px}
+  footer{margin-top:3em;padding-top:1em;border-top:1px solid #e2e7ee;font-size:.9em;color:#5a6a7e}
 </style>
 </head>
 <body>
 <h1>SOMBROC : Suppression de compte</h1>
-<p class="meta">22 juillet 2026 · <a href="#english">English version below</a></p>
-<nav><a href="confidentialite.html">Confidentialité</a><a href="conditions.html">Conditions d'utilisation</a><a href="suppression-compte.html">Suppression de compte</a></nav>
+<p class="meta">Version 2 (pré-lancement) · 3 août 2026 ·
+<a href="account-deletion.html" id="english">English version</a></p>
+<nav>
+  <a href="confidentialite.html">Confidentialité</a>
+  <a href="conditions.html">Conditions d'utilisation</a>
+  <a href="suppression-compte.html">Suppression de compte</a>
+  <a href="mentions-legales.html">Mentions légales</a>
+</nav>
 
-<p>Cette page décrit comment supprimer votre compte SOMBROC et les données associées.
-Éditeur : <strong>Axel Bonamy (NikitaXV)</strong>, France.</p>
+<p>Vous pouvez demander à tout moment la suppression de votre compte SOMBROC et des données qui s'y rattachent.
+La demande est <strong>gratuite</strong> et ne nécessite <strong>pas d'avoir le jeu installé</strong>.</p>
 
-<h2>1. Depuis le jeu (recommandé)</h2>
+<div class="action">
+<h2>1. Demander la suppression (par le web, sans le jeu)</h2>
 <ol>
-<li>Ouvrez SOMBROC.</li>
-<li>Allez dans <strong>Paramètres › Compte › Supprimer mon compte</strong>.</li>
-<li>Confirmez. La demande est enregistrée côté serveur.</li>
+<li>Envoyez un e-mail à
+<a href="mailto:bonamyaxelucas@hotmail.fr?subject=SOMBROC%20%3A%20suppression%20de%20compte&amp;body=Identifiant%20de%20compte%20%3A%20">bonamyaxelucas@hotmail.fr</a>
+avec l'objet <strong>« SOMBROC : suppression de compte »</strong>.</li>
+<li>Indiquez dans le message votre <strong>identifiant de compte</strong>. C'est la seule information qui nous
+permet de retrouver votre partie : le jeu ne connaît ni votre nom, ni votre adresse e-mail.
+<ul>
+<li>Si vous avez encore le jeu : Réglages › <em>Compte et support</em> › <em>Identifiant de compte</em> ›
+<strong>Copier</strong>, puis collez-le dans l'e-mail.</li>
+<li>Si vous avez désinstallé le jeu et n'avez plus cet identifiant, écrivez-nous quand même : indiquez le
+pseudonyme affiché dans les classements ainsi que la date approximative de votre dernière partie, et nous
+chercherons le compte avec vous. Sans élément permettant de vous rattacher à un compte, nous ne pourrons pas
+donner suite, faute de pouvoir vérifier que le compte est bien le vôtre.</li>
+</ul></li>
+<li>Nous enregistrons la demande côté serveur et vous répondons par e-mail pour la confirmer, puis à nouveau une
+fois la suppression exécutée.</li>
 </ol>
-
-<h2>2. Par le web (sans le jeu)</h2>
-<p>Envoyez un e-mail à <a href="mailto:bonamyaxelucas@hotmail.fr?subject=SOMBROC%20:%20suppression%20de%20compte">bonamyaxelucas@hotmail.fr</a>
-avec l'objet « SOMBROC : suppression de compte », depuis l'adresse liée à votre compte ou en indiquant votre identifiant de joueur
-(Paramètres › Compte). Nous confirmons la suppression par retour d'e-mail.</p>
-
-<h2>3. Ce qui est supprimé</h2>
-<p>Compte, progression, inventaire, porte-monnaie de jeu, sauvegardes, jetons de notification et identifiants de liaison
-(Google Play Games / invité). La suppression est <strong>définitive et irréversible</strong> : les objets et achats consommés
-ne sont pas restaurables.</p>
-
-<h2>4. Délais et exceptions</h2>
-<p>La suppression effective intervient sous <strong>7 jours</strong> (fenêtre de sécurité anti-abus, purge à J+7). Certaines
-données peuvent être conservées plus longtemps lorsque la loi l'exige : registres de transactions d'achat (obligations comptables
-et prévention de la fraude au remboursement) et journaux de fraude en cas d'infraction constatée. Ces données sont conservées le
-temps strictement nécessaire, puis supprimées.</p>
-
-<h2>5. Une question ?</h2>
-<p>Contact confidentialité : <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a> ·
-Politique de <a href="confidentialite.html">confidentialité</a>.</p>
-
-<div class="en" id="english">
-<h1>SOMBROC : Account deletion (English)</h1>
-<p class="meta">July 22, 2026</p>
-<p>This page explains how to delete your SOMBROC account and associated data. Publisher: <strong>Axel Bonamy (NikitaXV)</strong>, France.</p>
-<p><strong>In-game (recommended):</strong> open SOMBROC, go to <strong>Settings › Account › Delete my account</strong>, and confirm.</p>
-<p><strong>Via the web:</strong> email <a href="mailto:bonamyaxelucas@hotmail.fr?subject=SOMBROC%20account%20deletion">bonamyaxelucas@hotmail.fr</a>
-with subject "SOMBROC account deletion", from the address linked to your account or quoting your player ID (Settings › Account). We confirm by reply.</p>
-<p><strong>What is deleted:</strong> account, progression, inventory, in-game wallet, saves, push tokens, and linking identifiers
-(Google Play Games / guest). Deletion is <strong>permanent and irreversible</strong>; consumed items and purchases cannot be restored.</p>
-<p><strong>Timing &amp; exceptions:</strong> deletion completes within <strong>7 days</strong> (anti-abuse safety window, purge at
-D+7). Some data may be kept longer where law requires: purchase transaction records (accounting and refund-fraud prevention) and
-fraud logs where an infringement was found, for the strictly necessary period, then deleted.</p>
-<p><strong>Questions:</strong> <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a> · <a href="confidentialite.html">Privacy policy</a>.</p>
 </div>
+
+<div data-etat="prevu">
+<h2>2. Depuis le jeu <span class="drapeau">pas encore disponible</span></h2>
+<p>Un bouton de suppression directement dans les réglages du jeu est prévu ; il <strong>n'est pas disponible dans
+la version publiée à la date de cette page</strong> (3 août 2026). Tant qu'il ne l'est pas, la voie web
+ci-dessus est le canal officiel, et elle produit exactement le même effet. Cette page sera mise à jour dès que le
+bouton sera livré.</p>
+</div>
+
+<h2>3. Ce qui se passe, et quand</h2>
+<table>
+<tr><th>Étape</th><th>Délai</th><th>Effet</th></tr>
+<tr><td>Enregistrement de la demande</td><td>Immédiat</td>
+<td>Toutes vos sessions sont déconnectées et votre compte est retiré des classements publics (profondeur,
+éliminations, duels).</td></tr>
+<tr><td>Période de sécurité</td><td>7 jours</td>
+<td>Vos données subsistent, mais le compte est hors ligne. Ce délai protège contre les demandes faites par
+erreur ou par un tiers ayant eu accès à votre téléphone. Vous pouvez annuler pendant cette période (voir
+point 5).</td></tr>
+<tr><td>Purge définitive</td><td>À J+7</td>
+<td>Les données listées ci-dessous sont effacées et le compte est supprimé. L'opération est
+<strong>irréversible</strong>.</td></tr>
+</table>
+
+<h2>4. Ce qui est effacé</h2>
+<ul>
+<li>Le compte lui-même et ses identifiants de connexion.</li>
+<li>Vos monnaies du jeu (or, gemmes), votre sac, votre coffre, vos fontes en cours, votre équipement, vos reliques.</li>
+<li>Votre progression : profondeur maximale atteinte, expérience, cycle de récompense quotidienne, droits achetés
+en boutique, compteurs de placements récompensés.</li>
+<li>Vos fantômes laissés dans la mine et vos horloges de temps de jeu.</li>
+<li>Vos entrées dans les trois classements publics.</li>
+<li>Votre classement de duel et les invitations de duel reçues.</li>
+<li>Votre jeton de notification et vos préférences de notification.</li>
+<li>Vos compteurs anti-abus et votre registre technique d'opérations.</li>
+</ul>
+<p><strong>Ce qui subsiste après la purge</strong> : une seule ligne d'audit <strong>anonyme</strong> — une
+empreinte cryptographique à sens unique et une date — qui prouve que la suppression a bien eu lieu. L'identifiant
+d'origine étant détruit, cette empreinte ne permet pas de vous ré-identifier. Les sauvegardes techniques de la base
+de données peuvent encore contenir vos données jusqu'à leur rotation (au plus quelques semaines) ; elles ne sont
+jamais consultées en dehors d'une restauration après incident. Enfin, si des faits de fraude ont été constatés sur
+le compte, les éléments de preuve correspondants sont conservés le temps nécessaire au traitement du dossier.</p>
+
+<h2>5. Annuler une demande</h2>
+<p>Tant que les 7 jours ne sont pas écoulés, écrivez-nous à la même adresse avec l'objet
+<strong>« SOMBROC : annulation de suppression »</strong> et votre identifiant de compte : la demande est annulée
+et vous retrouvez votre partie intacte. Passé ce délai, plus rien n'est récupérable.</p>
+
+<h2>6. Autres droits</h2>
+<p>Vous pouvez aussi demander une copie de vos données ou leur rectification sans supprimer votre compte : voir la
+<a href="confidentialite.html">politique de confidentialité</a>.</p>
+
+<footer>
+SOMBROC — <a href="mentions-legales.html">Mentions légales</a> ·
+<a href="confidentialite.html">Politique de confidentialité</a> ·
+<a href="conditions.html">Conditions d'utilisation</a> ·
+Contact : <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a>
+</footer>
 </body>
 </html>
