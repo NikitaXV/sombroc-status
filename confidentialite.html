@@ -5,91 +5,210 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SOMBROC : Politique de confidentialité</title>
 <style>
-  body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;max-width:760px;margin:0 auto;
+  :root{color-scheme:light}
+  body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;max-width:780px;margin:0 auto;
     padding:32px 20px 80px;line-height:1.65;color:#1c2430;background:#fafbfc}
-  h1{font-size:1.7em;line-height:1.2} h2{font-size:1.15em;margin-top:2em}
+  h1{font-size:1.7em;line-height:1.25} h2{font-size:1.12em;margin-top:2.2em}
   .meta{color:#5a6a7e;font-size:.92em} a{color:#0b62c4}
-  nav{font-size:.92em;margin:.5em 0 1.5em} nav a{margin-right:1em}
-  table{border-collapse:collapse;width:100%;font-size:.92em}
+  nav{font-size:.92em;margin:.6em 0 1.8em;padding-bottom:.8em;border-bottom:1px solid #e2e7ee}
+  nav a{margin-right:1em;display:inline-block}
+  table{border-collapse:collapse;width:100%;font-size:.92em;margin:.6em 0}
   td,th{border:1px solid #d8dee6;padding:8px 10px;text-align:left;vertical-align:top}
-  .en{margin-top:3em;border-top:2px solid #d8dee6;padding-top:1em}
+  th{background:#f0f3f7}
+  [data-etat="prevu"]{border-left:4px solid #c8a33a;background:#fdf8ea;padding:.9em 1em;margin:1.4em 0}
+  [data-etat="prevu"] h2{margin-top:0}
+  .drapeau{display:inline-block;font-weight:700;font-size:.78em;letter-spacing:.06em;
+    text-transform:uppercase;color:#7a5c00;background:#f6e7b8;padding:2px 8px;border-radius:3px}
+  footer{margin-top:3em;padding-top:1em;border-top:1px solid #e2e7ee;font-size:.9em;color:#5a6a7e}
+  ul{padding-left:1.2em} li{margin:.3em 0}
 </style>
 </head>
 <body>
 <h1>SOMBROC : Politique de confidentialité</h1>
-<p class="meta">Version 2 (pré-lancement) · 22 juillet 2026 · <a href="#english">English version below</a></p>
-<nav><a href="confidentialite.html">Confidentialité</a><a href="conditions.html">Conditions d'utilisation</a><a href="suppression-compte.html">Suppression de compte</a></nav>
+<p class="meta">Version 3 (pré-lancement) · 3 août 2026 ·
+<a href="privacy.html" id="english">English version</a></p>
+<nav>
+  <a href="confidentialite.html">Confidentialité</a>
+  <a href="conditions.html">Conditions d'utilisation</a>
+  <a href="suppression-compte.html">Suppression de compte</a>
+  <a href="mentions-legales.html">Mentions légales</a>
+</nav>
 
-<p>SOMBROC est un jeu mobile édité par <strong>Axel Bonamy (NikitaXV)</strong>, France, responsable du traitement.
-Contact : <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a>.
-Le jeu est gratuit avec des <strong>achats intégrés</strong> (gemmes) et des <strong>publicités récompensées</strong> facultatives.
-Cette politique décrit les traitements prévus et sera mise à jour avant la sortie publique, à cette même adresse.</p>
+<p>Cette politique décrit ce que le jeu SOMBROC fait <strong>réellement</strong> de vos données à la date
+indiquée ci-dessus. Elle distingue explicitement ce qui est <strong>actif aujourd'hui</strong> de ce qui est
+seulement <strong>prévu</strong> : aucune fonctionnalité annoncée ici n'est présentée comme active tant qu'elle
+ne l'est pas. Toute activation d'un nouveau traitement fera l'objet d'une mise à jour de cette page,
+<strong>à cette même adresse et avant l'activation</strong>.</p>
 
-<h2>1. Données traitées et finalités</h2>
+<h2>1. Qui est responsable du traitement</h2>
+<p>Axel Bonamy, éditeur du jeu sous le nom NikitaXV (France). Coordonnées complètes :
+<a href="mentions-legales.html">mentions légales</a>.
+Contact vie privée : <a href="mailto:bonamyaxelucas@hotmail.fr?subject=SOMBROC%20%3A%20donn%C3%A9es">bonamyaxelucas@hotmail.fr</a>
+(objet « SOMBROC : données »). Il n'y a pas de délégué à la protection des données : la structure n'y est pas soumise.</p>
+
+<h2>2. Ce qui est traité aujourd'hui</h2>
+<p>SOMBROC est un jeu en ligne : la progression vit sur le serveur, jamais uniquement sur le téléphone.
+Le jeu ne demande <strong>ni nom, ni adresse e-mail, ni numéro de téléphone, ni date de naissance</strong>.</p>
 <table>
-<tr><th>Données</th><th>Finalité</th><th>Base légale</th></tr>
-<tr><td>Identifiant de joueur Google Play Games (ou identifiant invité)</td><td>Compte, sauvegarde de la progression, jeu en ligne</td><td>Exécution du contrat</td></tr>
-<tr><td>Données de jeu (progression, inventaire, porte-monnaie, actions)</td><td>Fonctionnement du jeu en ligne</td><td>Exécution du contrat</td></tr>
-<tr><td>Jeton d'achat (Google Play Billing)</td><td>Validation serveur des achats intégrés, lutte contre la fraude au remboursement</td><td>Exécution du contrat / intérêt légitime</td></tr>
-<tr><td>Signaux techniques anti-triche (cohérence des actions, intégrité de l'appareil via Google Play Integrity)</td><td>Prévention de la fraude, équité du jeu</td><td>Intérêt légitime</td></tr>
-<tr><td>Mesures d'audience et d'usage (événements de jeu)</td><td>Amélioration du jeu</td><td>Consentement (refusable et retirable dans les réglages)</td></tr>
-<tr><td>Rapports d'erreurs et de plantages</td><td>Correction des bugs</td><td>Intérêt légitime</td></tr>
-<tr><td>Identifiant publicitaire et signaux AdMob (si consentement)</td><td>Publicités récompensées et mesure de leur diffusion (SSV)</td><td>Consentement via la CMP certifiée Google (UMP)</td></tr>
-<tr><td>Jeton de notification (FCM)</td><td>Notifications push (désactivables par catégorie)</td><td>Consentement</td></tr>
+<tr><th>Donnée</th><th>Origine</th><th>Finalité</th><th>Base légale</th></tr>
+<tr>
+  <td>Identifiant d'appareil applicatif : un identifiant aléatoire (UUID) <em>généré par le jeu lui-même</em> au
+  premier lancement et conservé dans l'application. Il n'est dérivé d'aucun identifiant matériel, d'aucun numéro
+  de série et d'aucun compte Google.</td>
+  <td>Créé par l'application</td>
+  <td>Vous reconnaître d'une session à l'autre et rattacher votre progression à votre compte de jeu</td>
+  <td>Exécution du contrat (les CGU)</td>
+</tr>
+<tr>
+  <td>Identifiant de compte de jeu (UUID serveur) et pseudonyme technique attribué automatiquement à la création
+  du compte</td><td>Créé par le serveur</td>
+  <td>Faire fonctionner le compte, les sessions et les classements</td><td>Exécution du contrat</td>
+</tr>
+<tr>
+  <td>Données de jeu : progression et profondeur atteinte, expérience, inventaire, sac, coffre, équipement,
+  reliques, monnaies du jeu (or et gemmes), fontes en cours, récompense quotidienne, droits achetés en boutique,
+  fantômes laissés dans la mine, compteurs de placements récompensés</td>
+  <td>Vos actions dans le jeu</td><td>Faire fonctionner le jeu et sauvegarder votre partie</td>
+  <td>Exécution du contrat</td>
+</tr>
+<tr>
+  <td>Classements : pseudonyme et score, <strong>visibles des autres joueurs</strong> (profondeur, éliminations, duels)</td>
+  <td>Vos performances de jeu</td><td>Afficher les ligues publiques</td><td>Exécution du contrat</td>
+</tr>
+<tr>
+  <td>Duels : classement Elo interne et invitations reçues</td><td>Vos parties en duel</td>
+  <td>Apparier des adversaires de niveau comparable</td><td>Exécution du contrat</td>
+</tr>
+<tr>
+  <td>Notifications : jeton d'appareil Firebase Cloud Messaging et vos préférences par catégorie</td>
+  <td>Fourni par les services Google Play de votre téléphone, transmis par le jeu</td>
+  <td>Vous envoyer les notifications que vous avez acceptées (fin de fonte, rappel, etc.)</td>
+  <td>Consentement (autorisation système Android, réversible ; chaque catégorie se coupe dans les réglages du jeu)</td>
+</tr>
+<tr>
+  <td>Compteurs anti-abus : nombre d'actions par minute et par heure pour chaque type d'action, et un compteur de
+  dépassements. Aucun contenu, aucune position, aucun profil comportemental.</td>
+  <td>Calculé par le serveur au fil de vos actions</td>
+  <td>Empêcher l'automatisation et la triche, protéger l'économie du jeu et les autres joueurs</td>
+  <td>Intérêt légitime (équité du jeu et sécurité du service)</td>
+</tr>
+<tr>
+  <td>Registre d'idempotence : l'identifiant technique d'une opération et son horodatage</td>
+  <td>Généré à chaque action qui modifie votre partie</td>
+  <td>Empêcher qu'une action envoyée deux fois (coupure réseau) soit appliquée deux fois</td>
+  <td>Exécution du contrat</td>
+</tr>
+<tr>
+  <td>Journaux techniques du serveur : adresse IP, horodatage, requête, code de réponse</td>
+  <td>Émis automatiquement par le serveur à chaque connexion</td>
+  <td>Faire fonctionner le service, diagnostiquer les pannes, détecter les abus réseau</td>
+  <td>Intérêt légitime (sécurité et continuité du service)</td>
+</tr>
 </table>
+<p>Le jeu ne demande <strong>aucune permission de géolocalisation</strong>, n'accède ni à vos contacts, ni à vos
+photos, ni à votre microphone. Il n'y a <strong>ni messagerie, ni chat</strong> entre joueurs : vous ne pouvez pas
+publier de texte libre.</p>
 
-<h2>2. Destinataires et sous-traitants</h2>
-<p>Nous ne vendons aucune donnée. Nos sous-traitants et leurs rôles :</p>
+<h2>3. À qui ces données sont transmises</h2>
+<p>Aucune donnée n'est vendue, ni louée, ni cédée à des fins publicitaires ou de courtage. Les seuls tiers
+qui interviennent sont les prestataires techniques ci-dessous, qui agissent pour notre compte :</p>
+<table>
+<tr><th>Prestataire</th><th>Rôle</th><th>Où</th></tr>
+<tr><td>Hetzner Online GmbH</td><td>Héberge le serveur de jeu et sa base de données</td><td>Allemagne (Falkenstein)</td></tr>
+<tr><td>Google LLC — Google Cloud Storage</td><td>Reçoit les sauvegardes chiffrées en transit de la base de données (bucket privé, compressées)</td><td>États-Unis (us-central1)</td></tr>
+<tr><td>Google Ireland Ltd / Google LLC — Firebase Cloud Messaging</td><td>Achemine les notifications push jusqu'à votre téléphone</td><td>Union européenne et États-Unis</td></tr>
+<tr><td>GitHub, Inc.</td><td>Héberge les présentes pages légales et le fichier d'état du jeu lu au démarrage</td><td>États-Unis</td></tr>
+<tr><td>Google Ireland Ltd — Google Play</td><td>Distribue l'application ; Google traite à ce titre ses propres données de téléchargement, sous sa propre politique</td><td>Union européenne</td></tr>
+</table>
+<p><strong>Transferts hors Union européenne.</strong> Les sauvegardes de base de données et l'acheminement des
+notifications peuvent impliquer des serveurs situés aux États-Unis. Ces transferts s'appuient sur les clauses
+contractuelles types de la Commission européenne et, le cas échéant, sur la certification du prestataire au
+cadre de protection des données UE–États-Unis, tels que documentés par ces prestataires.</p>
+<p>Nous pouvons également communiquer des données à une autorité judiciaire ou administrative lorsque la loi
+l'exige.</p>
+
+<h2>4. Combien de temps ces données sont conservées</h2>
 <ul>
-<li><strong>Hetzner Online GmbH</strong> (Allemagne) — hébergement du serveur de jeu.</li>
-<li><strong>Google Ireland / Google LLC</strong> via les <strong>services Google Play</strong> : Google Play Games Services (authentification, sauvegarde), Google Play Integrity (anti-triche), Google Play Billing (achats), <strong>Google AdMob</strong> (publicités récompensées) et Firebase Cloud Messaging (notifications).</li>
-<li><strong>PostHog</strong> (mesure d'audience, hébergement Union européenne) — uniquement si vous consentez.</li>
-<li><strong>Sentry</strong> (rapports de plantage).</li>
+<li><strong>Compte et données de jeu</strong> : tant que le compte existe. Après une demande de suppression, la
+purge intervient à <strong>J+7</strong> (7 jours calendaires) ; la déconnexion et le retrait des classements
+sont, eux, <strong>immédiats</strong>. Voir la <a href="suppression-compte.html">page de suppression de compte</a>.</li>
+<li><strong>Registre d'idempotence</strong> : supprimé automatiquement au-delà de <strong>90 jours</strong>
+(purge planifiée hebdomadaire).</li>
+<li><strong>Journaux techniques du serveur</strong> : conservés en volume borné, par rotation automatique
+(3 fichiers de 10 Mo au maximum par service) ; les entrées les plus anciennes sont écrasées en continu, ce qui
+représente en pratique quelques jours d'activité. Les journaux de maintenance sont conservés 8 semaines.</li>
+<li><strong>Sauvegardes de la base</strong> : sauvegarde locale quotidienne conservée <strong>7 jours</strong> ;
+sauvegardes distantes conservées selon une rotation de 2 sauvegardes complètes et 6 sauvegardes différentielles.
+Une donnée supprimée disparaît donc des sauvegardes au terme de cette rotation.</li>
+<li><strong>Preuve de suppression</strong> : après la purge, il ne subsiste qu'une ligne d'audit
+<strong>anonyme</strong> : une empreinte cryptographique à sens unique et une date. L'identifiant d'origine étant
+détruit, cette empreinte ne permet pas de vous ré-identifier. Elle est conservée sans limite de durée, comme
+preuve que la suppression a bien été exécutée.</li>
+<li><strong>Compteurs anti-abus</strong> : ils vivent avec le compte et sont supprimés avec lui.</li>
 </ul>
-<p>Ces prestataires peuvent traiter des données hors UE ; le cas échéant, les transferts sont encadrés par les clauses contractuelles types de la Commission européenne documentées dans leurs politiques respectives.</p>
 
-<h2>3. Publicités et consentement UE</h2>
-<p>Les publicités sont <strong>récompensées et facultatives</strong> : aucune publicité interstitielle imposée. Dans l'Espace économique européen et au Royaume-Uni, une <strong>plateforme de gestion du consentement (CMP) certifiée Google, via le SDK UMP</strong>, recueille votre choix avant toute personnalisation publicitaire. Un refus reste pleinement jouable : des alternatives en gemmes sont proposées. Vous pouvez rouvrir ce choix à tout moment dans les réglages du jeu.</p>
-
-<h2>4. Durées de conservation</h2>
-<p>Compte et progression : tant que le compte existe. Télémétrie anti-triche : 90 jours (agrégats). Registres d'idempotence des opérations : purgés au-delà de 90 jours. Mesure d'audience : selon les durées PostHog configurées. Journaux de fraude en cas d'infraction constatée : durée nécessaire au traitement du litige.</p>
-
-<h2>5. Vos droits et la suppression de compte</h2>
-<p>Droits d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité, et droit de retirer votre consentement : écrivez à
-<a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a> (objet : « SOMBROC : données »).
-La suppression de compte est décrite sur la page dédiée : <a href="suppression-compte.html">Suppression de compte</a>
-(dans le jeu : Paramètres › Compte › Supprimer mon compte, et par cette page web).
-Réclamation possible auprès de la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
+<h2>5. Vos droits</h2>
+<p>Vous disposez des droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité,
+ainsi que du droit de retirer votre consentement à tout moment (pour les notifications : autorisation système
+Android, ou réglages du jeu, catégorie par catégorie).</p>
+<p>Pour les exercer, écrivez à
+<a href="mailto:bonamyaxelucas@hotmail.fr?subject=SOMBROC%20%3A%20donn%C3%A9es">bonamyaxelucas@hotmail.fr</a> en
+indiquant votre <strong>identifiant de compte</strong> (dans le jeu : Réglages › <em>Compte et support</em> ›
+<em>Identifiant de compte</em> › Copier). Sans cet identifiant, nous ne pouvons pas relier une demande à un compte :
+le jeu ne connaît ni votre nom ni votre adresse e-mail. Réponse sous un mois au plus.</p>
+<p>Aucune décision automatisée produisant des effets juridiques n'est prise à votre égard : les compteurs
+anti-abus ne déclenchent jamais de sanction automatique, toute sanction éventuelle passe par un examen humain.</p>
+<p>Vous pouvez introduire une réclamation auprès de la Commission nationale de l'informatique et des libertés
+(CNIL), 3 place de Fontenoy, 75007 Paris — <a href="https://www.cnil.fr">www.cnil.fr</a>.</p>
 
 <h2>6. Âge</h2>
-<p>Le jeu est destiné aux joueurs de 13 ans et plus (15 ans pour le consentement autonome en France). Le paramètre « traiter comme un public soumis à l'âge du consentement » d'AdMob est configuré en cohérence.</p>
+<p>SOMBROC s'adresse aux joueurs de <strong>13 ans et plus</strong>. En France, le consentement autonome à un
+traitement fondé sur le consentement suppose <strong>15 ans</strong> ; en dessous, l'accord d'un titulaire de
+l'autorité parentale est requis. Le jeu n'est pas conçu pour les enfants et n'est pas inscrit aux programmes
+« familles » des magasins d'applications.</p>
 
-<div class="en" id="english">
-<h1>SOMBROC : Privacy Policy (English)</h1>
-<p class="meta">Version 2 (pre-launch) · July 22, 2026</p>
-<p>SOMBROC is a mobile game published by <strong>Axel Bonamy (NikitaXV)</strong>, France, the data controller.
-Contact: <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a>. The game is free with
-<strong>in-app purchases</strong> (gems) and optional <strong>rewarded ads</strong>. This policy describes the planned
-processing and will be updated at this same URL before public release.</p>
-<p><strong>Data we process:</strong> Google Play Games player ID (or guest ID) and gameplay data (progression, inventory,
-wallet, actions) to run the online game (contract); Google Play Billing purchase tokens for server-side purchase
-validation and refund-fraud prevention (contract / legitimate interest); anti-cheat signals, including Google Play
-Integrity, under legitimate interest; usage analytics only with your consent (refusable and withdrawable in settings);
-crash reports under legitimate interest; advertising ID and AdMob signals only with consent through Google's certified
-consent platform (UMP), for rewarded ads and ad-delivery measurement (SSV); FCM push token with consent.</p>
-<p><strong>Processors:</strong> Hetzner (server hosting, Germany); Google via Google Play Services — Play Games,
-Play Integrity, Play Billing, <strong>AdMob</strong>, Firebase Cloud Messaging; PostHog (EU hosting, consent only);
-Sentry (crash reports). We never sell data. Non-EU transfers, where they occur, rely on the EU Standard Contractual Clauses.</p>
-<p><strong>Ads &amp; EU consent:</strong> ads are rewarded and optional — no forced interstitials. In the EEA/UK a
-Google-certified consent platform (UMP SDK) collects your choice before any ad personalization; declining stays fully
-playable (gem alternatives are offered) and can be reopened in settings.</p>
-<p><strong>Retention:</strong> account data while the account exists; anti-cheat telemetry 90 days; operation
-idempotency records purged after 90 days; fraud logs as long as needed for the case.</p>
-<p><strong>Your rights &amp; account deletion:</strong> access, rectification, erasure, objection, restriction,
-portability, and consent withdrawal — email <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a>
-(subject "SOMBROC: data"). See the dedicated <a href="suppression-compte.html">Account deletion</a> page (in-game:
-Settings › Account › Delete my account, and via that web page). You may lodge a complaint with the French CNIL.</p>
-<p><strong>Age:</strong> 13+ (15+ for autonomous consent in France); AdMob's under-age-of-consent flag is set accordingly.</p>
+<h2>7. Sécurité</h2>
+<p>Les échanges entre le jeu et le serveur sont chiffrés (TLS/WSS). La console d'administration du serveur n'est
+pas exposée sur Internet. Les secrets d'exploitation ne sont jamais stockés dans le code du jeu. Les sauvegardes
+sont automatisées et leur restauration est testée périodiquement.</p>
+
+<div data-etat="prevu">
+<h2>8. Ce qui n'est PAS actif à ce jour <span class="drapeau">non actif</span></h2>
+<p>Les éléments suivants sont prévus mais <strong>ne sont pas intégrés</strong> dans la version actuelle du jeu.
+Aucun d'eux ne collecte quoi que ce soit aujourd'hui. Cette page sera mise à jour, à cette même adresse,
+<strong>avant</strong> toute activation.</p>
+<ul>
+<li><strong>Connexion Google Play Games</strong> : la connexion par compte Google Play Games n'est pas encore
+proposée. Aujourd'hui, le jeu n'utilise que l'identifiant applicatif décrit au point 2 et ne reçoit aucun
+identifiant de joueur Google.</li>
+<li><strong>Publicité récompensée et AdMob</strong> : aucune régie publicitaire n'est intégrée, aucune publicité
+n'est diffusée, et <strong>aucun identifiant publicitaire n'est lu ni transmis</strong>. Le jeu ne contient
+aujourd'hui aucun composant publicitaire. Lorsque la publicité récompensée sera activée, elle restera
+facultative (jamais d'écran publicitaire imposé), une plateforme de gestion du consentement certifiée
+(SDK UMP) recueillera votre choix dans l'Espace économique européen et au Royaume-Uni, et cette page décrira
+précisément les données concernées avant la mise en service.</li>
+<li><strong>Achats intégrés</strong> : le circuit de paiement (Google Play Billing) n'est pas branché ; les
+articles payants du jeu répondent aujourd'hui « indisponible ». Aucun jeton d'achat, aucun numéro de commande,
+aucune donnée de facturation n'est traité.</li>
+<li><strong>Mesure d'audience produit (PostHog)</strong> : aucun outil d'analyse d'usage n'est intégré. Aucun
+événement d'usage ne quitte votre téléphone. Lorsqu'il le sera, il sera soumis à votre consentement préalable,
+refusable et révocable, et le refus n'enlèvera rien au jeu.</li>
+<li><strong>Rapports de plantage (Sentry)</strong> : aucun outil de remontée de plantage n'est intégré.</li>
+<li><strong>Attestation d'intégrité (Google Play Integrity)</strong> : non intégrée ; aucun verdict d'intégrité
+d'appareil n'est demandé ni reçu.</li>
+</ul>
 </div>
+
+<h2>9. Modifications</h2>
+<p>Toute évolution de cette politique est publiée à cette adresse, avec une nouvelle date de version. Les
+changements substantiels (nouveau traitement, nouveau destinataire) sont publiés <strong>avant</strong> leur
+entrée en vigueur, et signalés dans le jeu.</p>
+
+<footer>
+SOMBROC — <a href="mentions-legales.html">Mentions légales</a> ·
+<a href="conditions.html">Conditions d'utilisation</a> ·
+<a href="suppression-compte.html">Suppression de compte</a> ·
+Contact : <a href="mailto:bonamyaxelucas@hotmail.fr">bonamyaxelucas@hotmail.fr</a>
+</footer>
 </body>
 </html>
