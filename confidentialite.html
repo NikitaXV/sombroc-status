@@ -25,7 +25,7 @@
 </head>
 <body>
 <h1>SOMBROC : Politique de confidentialité</h1>
-<p class="meta">Version 3 (pré-lancement) · 3 août 2026 ·
+<p class="meta">Version 4 (pré-lancement) · 4 août 2026 ·
 <a href="privacy.html" id="english">English version</a></p>
 <nav>
   <a href="confidentialite.html">Confidentialité</a>
@@ -104,6 +104,52 @@ Le jeu ne demande <strong>ni nom, ni adresse e-mail, ni numéro de téléphone, 
   <td>Faire fonctionner le service, diagnostiquer les pannes, détecter les abus réseau</td>
   <td>Intérêt légitime (sécurité et continuité du service)</td>
 </tr>
+<tr>
+  <td>Vos choix de consentement : la réponse donnée à la plateforme de consentement Google
+  (SDK UMP) au premier lancement, et votre réponse à la demande d'acceptation de la mesure
+  d'audience. Ils sont conservés sur votre téléphone.</td>
+  <td>Vos réponses aux deux écrans de consentement, affichés au démarrage</td>
+  <td>Recueillir votre choix, le conserver et n'activer un traitement facultatif que si vous
+  l'avez accepté</td>
+  <td>Obligation légale (recueil et conservation de la preuve du consentement)</td>
+</tr>
+<tr>
+  <td>Identifiant publicitaire Android (AAID). La bibliothèque <strong>Firebase Analytics</strong>,
+  embarquée dans l'application comme dépendance technique des notifications Firebase, déclare la
+  permission <code>AD_ID</code> dans le manifeste de l'application et est donc en mesure de lire
+  cet identifiant. Le code de SOMBROC ne le lit pas et ne le transmet pas lui-même, et
+  <strong>aucune publicité n'est diffusée dans le jeu</strong>.</td>
+  <td>Système Android, via la bibliothèque Firebase Analytics</td>
+  <td>Aucune finalité publicitaire de notre part : cette bibliothèque arrive avec les
+  notifications. Nous la déclarons parce que la permission figure réellement dans l'application.</td>
+  <td>Consentement (choix recueilli par la plateforme de consentement Google avant tout
+  traitement facultatif)</td>
+</tr>
+<tr>
+  <td>Mesure d'audience produit (<strong>PostHog</strong>), <strong>uniquement si vous
+  l'acceptez</strong> : des événements de jeu pris dans une liste fermée (démarrage, début et fin
+  de session, étapes des premières minutes, descentes, morts, dépôts au coffre, fontes, forge,
+  récompense quotidienne, changements de réglage), accompagnés de propriétés techniques
+  (plateforme, gamme de l'appareil déduite de sa mémoire et de son nombre de cœurs, numéro de
+  session, jours écoulés depuis l'installation, état de vos consentements, palier d'équipement,
+  profondeur atteinte). Aucun texte libre, aucune position, aucun contact.</td>
+  <td>Vos actions dans le jeu, si et seulement si vous avez accepté</td>
+  <td>Comprendre où les joueurs bloquent et améliorer le jeu</td>
+  <td>Consentement (acceptation explicite, refusable et révocable à tout moment)</td>
+</tr>
+<tr>
+  <td>Rapports de plantage (<strong>Sentry</strong>) : la pile d'appels de l'erreur, le modèle
+  d'appareil et la version d'Android, la version du jeu, et les derniers messages techniques du
+  journal. L'outil est configuré <strong>sans donnée personnelle</strong> : ni capture d'écran, ni
+  arbre d'interface, ni identifiant d'utilisateur, ni mesure de performance. Il démarre dès
+  l'ouverture du jeu, avant les écrans de consentement — sans quoi un plantage survenant au
+  démarrage ne pourrait jamais être diagnostiqué.</td>
+  <td>Émis par le jeu au moment d'un plantage ou d'une erreur</td>
+  <td>Corriger les plantages et mesurer la stabilité d'une version avant de l'élargir à plus
+  de joueurs</td>
+  <td>Intérêt légitime (stabilité et sécurité du service). Vous pouvez vous y opposer à tout
+  moment dans les réglages du jeu, sans rien y perdre.</td>
+</tr>
 </table>
 <p>Le jeu ne demande <strong>aucune permission de géolocalisation</strong>, n'accède ni à vos contacts, ni à vos
 photos, ni à votre microphone. Il n'y a <strong>ni messagerie, ni chat</strong> entre joueurs : vous ne pouvez pas
@@ -119,6 +165,10 @@ qui interviennent sont les prestataires techniques ci-dessous, qui agissent pour
 <tr><td>Google Ireland Ltd / Google LLC — Firebase Cloud Messaging</td><td>Achemine les notifications push jusqu'à votre téléphone</td><td>Union européenne et États-Unis</td></tr>
 <tr><td>GitHub, Inc.</td><td>Héberge les présentes pages légales et le fichier d'état du jeu lu au démarrage</td><td>États-Unis</td></tr>
 <tr><td>Google Ireland Ltd — Google Play</td><td>Distribue l'application ; Google traite à ce titre ses propres données de téléchargement, sous sa propre politique</td><td>Union européenne</td></tr>
+<tr><td>Google Ireland Ltd / Google LLC — plateforme de consentement (SDK UMP, composant du greffon <strong>Google AdMob</strong> embarqué dans l'application)</td><td>Affiche l'écran de consentement dans l'Espace économique européen et au Royaume-Uni, et conserve votre choix. <strong>Aucune annonce n'est diffusée</strong> : le greffon ne charge aucune publicité.</td><td>Union européenne et États-Unis</td></tr>
+<tr><td>Google Ireland Ltd / Google LLC — Firebase Analytics</td><td>Bibliothèque embarquée comme dépendance technique des notifications Firebase (voir le tableau de la section 2)</td><td>Union européenne et États-Unis</td></tr>
+<tr><td>PostHog, Inc.</td><td>Reçoit les événements de mesure d'audience produit, uniquement si vous l'avez acceptée</td><td>Union européenne (hébergement européen de PostHog)</td></tr>
+<tr><td>Functional Software, Inc. (Sentry)</td><td>Reçoit les rapports de plantage et les indicateurs de stabilité de version</td><td>États-Unis</td></tr>
 </table>
 <p><strong>Transferts hors Union européenne.</strong> Les sauvegardes de base de données et l'acheminement des
 notifications peuvent impliquer des serveurs situés aux États-Unis. Ces transferts s'appuient sur les clauses
@@ -145,12 +195,28 @@ Une donnée supprimée disparaît donc des sauvegardes au terme de cette rotatio
 détruit, cette empreinte ne permet pas de vous ré-identifier. Elle est conservée sans limite de durée, comme
 preuve que la suppression a bien été exécutée.</li>
 <li><strong>Compteurs anti-abus</strong> : ils vivent avec le compte et sont supprimés avec lui.</li>
+<li><strong>Mesure d'audience produit</strong> : les événements sont conservés chez PostHog
+(Union européenne) pendant la durée de rétention de l'offre souscrite. Retirer votre
+consentement <strong>arrête immédiatement</strong> tout envoi et remet à zéro l'identifiant local
+de mesure conservé sur votre téléphone.</li>
+<li><strong>Rapports de plantage</strong> : conservés chez Sentry pendant la durée de rétention de
+l'offre souscrite, et <strong>90 jours au maximum</strong> pour les événements d'erreur.</li>
+<li><strong>Choix de consentement</strong> : conservés sur votre téléphone tant que l'application
+est installée ; ils disparaissent avec la désinstallation ou l'effacement des données de
+l'application.</li>
 </ul>
 
 <h2>5. Vos droits</h2>
 <p>Vous disposez des droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité,
 ainsi que du droit de retirer votre consentement à tout moment (pour les notifications : autorisation système
 Android, ou réglages du jeu, catégorie par catégorie).</p>
+<p>Vos trois choix se règlent à tout moment dans le jeu, écran <em>Réglages</em> :
+<strong>« Mesure d'audience »</strong> (acceptation explicite, refusée tant que vous n'avez rien
+accepté), <strong>« Rapports de plantage »</strong> (activés par défaut au titre de l'intérêt
+légitime, vous pouvez vous y opposer), et <strong>« Options de confidentialité publicitaire »</strong>,
+qui rouvre l'écran de la plateforme de consentement Google lorsque celle-ci l'exige. Refuser ou
+revenir sur un choix <strong>n'enlève rien au jeu</strong> : aucun contenu, aucune récompense et
+aucune fonctionnalité n'en dépend.</p>
 <p>Pour les exercer, écrivez à
 <a href="mailto:bonamyaxelucas@hotmail.fr?subject=SOMBROC%20%3A%20donn%C3%A9es">bonamyaxelucas@hotmail.fr</a> en
 indiquant votre <strong>identifiant de compte</strong> (dans le jeu : Réglages › <em>Compte et support</em> ›
@@ -181,19 +247,14 @@ Aucun d'eux ne collecte quoi que ce soit aujourd'hui. Cette page sera mise à jo
 <li><strong>Connexion Google Play Games</strong> : la connexion par compte Google Play Games n'est pas encore
 proposée. Aujourd'hui, le jeu n'utilise que l'identifiant applicatif décrit au point 2 et ne reçoit aucun
 identifiant de joueur Google.</li>
-<li><strong>Publicité récompensée et AdMob</strong> : aucune régie publicitaire n'est intégrée, aucune publicité
-n'est diffusée, et <strong>aucun identifiant publicitaire n'est lu ni transmis</strong>. Le jeu ne contient
-aujourd'hui aucun composant publicitaire. Lorsque la publicité récompensée sera activée, elle restera
-facultative (jamais d'écran publicitaire imposé), une plateforme de gestion du consentement certifiée
-(SDK UMP) recueillera votre choix dans l'Espace économique européen et au Royaume-Uni, et cette page décrira
-précisément les données concernées avant la mise en service.</li>
+<li><strong>Publicité récompensée</strong> : <strong>aucune annonce n'est diffusée</strong> à ce jour.
+Le greffon publicitaire présent dans l'application (décrit à la section 3) ne charge aucune annonce :
+aucune unité publicitaire n'est demandée et aucun revenu publicitaire n'est perçu. Lorsque la publicité
+récompensée sera activée, elle restera facultative (jamais d'écran publicitaire imposé) et cette page
+décrira précisément les données concernées <strong>avant</strong> la mise en service.</li>
 <li><strong>Achats intégrés</strong> : le circuit de paiement (Google Play Billing) n'est pas branché ; les
 articles payants du jeu répondent aujourd'hui « indisponible ». Aucun jeton d'achat, aucun numéro de commande,
 aucune donnée de facturation n'est traité.</li>
-<li><strong>Mesure d'audience produit (PostHog)</strong> : aucun outil d'analyse d'usage n'est intégré. Aucun
-événement d'usage ne quitte votre téléphone. Lorsqu'il le sera, il sera soumis à votre consentement préalable,
-refusable et révocable, et le refus n'enlèvera rien au jeu.</li>
-<li><strong>Rapports de plantage (Sentry)</strong> : aucun outil de remontée de plantage n'est intégré.</li>
 <li><strong>Attestation d'intégrité (Google Play Integrity)</strong> : non intégrée ; aucun verdict d'intégrité
 d'appareil n'est demandé ni reçu.</li>
 </ul>
