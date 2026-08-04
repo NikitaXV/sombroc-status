@@ -25,7 +25,7 @@
 </head>
 <body>
 <h1>SOMBROC: Privacy Policy</h1>
-<p class="meta">Version 3 · 3 August 2026 · <a href="confidentialite.html">Version française</a></p>
+<p class="meta">Version 4 · 4 August 2026 · <a href="confidentialite.html">Version française</a></p>
 <nav>
   <a href="privacy.html">Privacy</a>
   <a href="terms.html">Terms of Use</a>
@@ -101,6 +101,49 @@ Privacy contact: <a href="mailto:bonamyaxelucas@hotmail.fr?subject=SOMBROC%3A%20
   <td>Running the service, diagnosing outages, detecting network abuse</td>
   <td>Legitimate interest (security and continuity of service)</td>
 </tr>
+<tr>
+  <td>Your consent choices: the answer you give to the Google consent management platform
+  (UMP SDK) on first launch, and your answer to the product-analytics opt-in. They are stored
+  on your phone.</td>
+  <td>Your answers to the two consent screens shown at start-up</td>
+  <td>Collecting your choice, keeping it, and switching on an optional processing only if you
+  accepted it</td>
+  <td>Legal obligation (collecting and keeping evidence of consent)</td>
+</tr>
+<tr>
+  <td>Android advertising ID (AAID). The <strong>Firebase Analytics</strong> library, embedded in
+  the app as a technical dependency of Firebase notifications, declares the <code>AD_ID</code>
+  permission in the application manifest and is therefore able to read that identifier. SOMBROC's
+  own code neither reads nor transmits it, and <strong>no advertisement is served in the
+  game</strong>.</td>
+  <td>Android system, through the Firebase Analytics library</td>
+  <td>No advertising purpose on our side: this library ships with notifications. We declare it
+  because the permission really is present in the application.</td>
+  <td>Consent (choice collected by the Google consent management platform before any optional
+  processing)</td>
+</tr>
+<tr>
+  <td>Product analytics (<strong>PostHog</strong>), <strong>only if you accept it</strong>: game
+  events drawn from a closed list (start-up, session start and end, first-minutes milestones,
+  descents, deaths, chest deposits, smelting, forging, daily reward, settings changes), together
+  with technical properties (platform, device tier derived from its memory and core count, session
+  number, days since installation, state of your consents, gear tier, depth reached). No free
+  text, no location, no contact details.</td>
+  <td>Your actions in the game, if and only if you accepted</td>
+  <td>Understanding where players get stuck and improving the game</td>
+  <td>Consent (explicit opt-in, refusable and revocable at any time)</td>
+</tr>
+<tr>
+  <td>Crash reports (<strong>Sentry</strong>): the error's call stack, the device model and Android
+  version, the game version, and the last technical log messages. The tool is configured with
+  <strong>no personal data</strong>: no screenshot, no view hierarchy, no user identifier and no
+  performance tracing. It starts as soon as the game opens, before the consent screens — otherwise
+  a crash occurring at start-up could never be diagnosed.</td>
+  <td>Emitted by the game when a crash or an error occurs</td>
+  <td>Fixing crashes and measuring the stability of a release before widening it to more players</td>
+  <td>Legitimate interest (stability and security of the service). You may object at any time in
+  the game settings, losing nothing.</td>
+</tr>
 </table>
 <p>The game requests <strong>no location permission</strong> and accesses neither your contacts, nor your photos,
 nor your microphone. There is <strong>no messaging and no chat</strong> between players: you cannot post free text.</p>
@@ -115,6 +158,10 @@ are the technical providers below, acting on our behalf:</p>
 <tr><td>Google Ireland Ltd / Google LLC — Firebase Cloud Messaging</td><td>Delivers push notifications to your phone</td><td>European Union and United States</td></tr>
 <tr><td>GitHub, Inc.</td><td>Hosts these legal pages and the service-status file read at start-up</td><td>United States</td></tr>
 <tr><td>Google Ireland Ltd — Google Play</td><td>Distributes the application; Google processes its own download data on that basis, under its own policy</td><td>European Union</td></tr>
+<tr><td>Google Ireland Ltd / Google LLC — consent management platform (UMP SDK, a component of the <strong>Google AdMob</strong> plugin embedded in the app)</td><td>Displays the consent screen in the European Economic Area and the United Kingdom, and stores your choice. <strong>No advertisement is served</strong>: the plugin loads none.</td><td>European Union and United States</td></tr>
+<tr><td>Google Ireland Ltd / Google LLC — Firebase Analytics</td><td>Library embedded as a technical dependency of Firebase notifications (see the table in section 2)</td><td>European Union and United States</td></tr>
+<tr><td>PostHog, Inc.</td><td>Receives product-analytics events, only if you accepted them</td><td>European Union (PostHog's European hosting)</td></tr>
+<tr><td>Functional Software, Inc. (Sentry)</td><td>Receives crash reports and release-stability metrics</td><td>United States</td></tr>
 </table>
 <p><strong>Transfers outside the European Union.</strong> Database backups and push-notification delivery may
 involve servers located in the United States. Those transfers rely on the European Commission's standard
@@ -137,12 +184,25 @@ rotation of 2 full and 6 differential backups. Deleted data therefore disappears
 line: a one-way cryptographic fingerprint and a date. Since the original identifier is destroyed, that fingerprint
 cannot be used to re-identify you. It is kept without time limit as evidence that the deletion was carried out.</li>
 <li><strong>Anti-abuse counters</strong>: they live with the account and are deleted with it.</li>
+<li><strong>Product analytics</strong>: events are kept by PostHog (European Union) for the
+retention period of the subscribed plan. Withdrawing your consent <strong>immediately stops</strong>
+all sending and resets the local analytics identifier stored on your phone.</li>
+<li><strong>Crash reports</strong>: kept by Sentry for the retention period of the subscribed plan,
+and <strong>90 days at most</strong> for error events.</li>
+<li><strong>Consent choices</strong>: kept on your phone for as long as the app is installed; they
+disappear when you uninstall it or clear its data.</li>
 </ul>
 
 <h2>5. Your rights</h2>
 <p>You have the rights of access, rectification, erasure, restriction, objection and portability, as well as the
 right to withdraw consent at any time (for notifications: the Android system permission, or the game settings,
 category by category).</p>
+<p>Your three choices can be changed at any time in the game, <em>Settings</em> screen:
+<strong>"Product analytics"</strong> (explicit opt-in, refused until you accept),
+<strong>"Crash reports"</strong> (on by default under legitimate interest, you may object), and
+<strong>"Advertising privacy options"</strong>, which reopens the Google consent management
+platform screen where it is required. Refusing or changing your mind <strong>takes nothing away
+from the game</strong>: no content, no reward and no feature depends on it.</p>
 <p>To exercise them, write to
 <a href="mailto:bonamyaxelucas@hotmail.fr?subject=SOMBROC%3A%20data">bonamyaxelucas@hotmail.fr</a> quoting your
 <strong>account identifier</strong> (in the game: Settings › <em>Account &amp; support</em> ›
@@ -171,17 +231,12 @@ is switched on.</p>
 <ul>
 <li><strong>Google Play Games sign-in</strong>: signing in with a Google Play Games account is not offered yet.
 Today the game only uses the application identifier described in section 2 and receives no Google player identifier.</li>
-<li><strong>Rewarded advertising and AdMob</strong>: no advertising network is integrated, no advertisement is
-served, and <strong>no advertising identifier is read or transmitted</strong>. The game currently contains no
-advertising component. When rewarded advertising is switched on it will stay optional (never a forced ad screen), a
-certified consent management platform (UMP SDK) will collect your choice in the European Economic Area and the
-United Kingdom, and this page will describe the data involved before it goes live.</li>
+<li><strong>Rewarded advertising</strong>: <strong>no advertisement is served</strong> today. The advertising
+plugin present in the app (described in section 3) loads none: no ad unit is requested and no advertising
+revenue is earned. When rewarded advertising is switched on it will stay optional (never a forced ad screen),
+and this page will describe the data involved <strong>before</strong> it goes live.</li>
 <li><strong>In-app purchases</strong>: the payment path (Google Play Billing) is not wired; paid shop items
 currently answer "unavailable". No purchase token, no order number and no billing data is processed.</li>
-<li><strong>Product analytics (PostHog)</strong>: no usage-analytics tool is integrated. No usage event leaves your
-phone. When one is added it will require your prior consent, refusable and revocable, and refusing will take
-nothing away from the game.</li>
-<li><strong>Crash reporting (Sentry)</strong>: no crash-reporting tool is integrated.</li>
 <li><strong>Device attestation (Google Play Integrity)</strong>: not integrated; no device integrity verdict is
 requested or received.</li>
 </ul>
